@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Painting Atlanta
-image: /img/home-jumbotron.jpg
+image: /img/deck.jpeg
 heading: Great coffee with a conscience
 subheading: It's all we do
 mainpitch:
