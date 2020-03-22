@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great paint with a conscience
+title: Painting Atlanta
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: It's all we do
 mainpitch:
   title: Why Kaldi
   description: >
