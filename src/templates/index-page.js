@@ -22,11 +22,11 @@ export const IndexPageTemplate = ({
   <div>
     <HeroBanner
       className="full-width-image margin-top-0 colorOverlay"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`
-      }}
+      // style={{
+      //   backgroundImage: `url(${
+      //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+      //   })`
+      // }}
     >
       <div
         style={{
