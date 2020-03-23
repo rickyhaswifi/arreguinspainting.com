@@ -9,6 +9,7 @@ import BlogRoll from '../components/BlogRoll'
 import Fade from 'react-reveal/Fade'
 
 import {HeroBanner, HeroTextPrime, HeroTextSecond} from '../styled-components/home-sc'
+import Deck from '../shared/images/deck.jpeg'
 
 export const IndexPageTemplate = ({
   image,
@@ -22,11 +23,12 @@ export const IndexPageTemplate = ({
   <div>
     <HeroBanner
       className="full-width-image margin-top-0 colorOverlay"
-      // style={{
-      //   backgroundImage: `url(${
-      //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-      //   })`
-      // }}
+      style={{
+        backgroundImage:`url(${
+          // !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          Deck
+        })`
+      }}
     >
       <div
         style={{
