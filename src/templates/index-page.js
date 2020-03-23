@@ -6,6 +6,10 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import Fade from 'react-reveal/Fade'
+
+import {HeroBanner, HeroTextPrime, HeroTextSecond} from '../styled-components/home-sc'
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -16,14 +20,12 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
+    <HeroBanner
+      className="full-width-image margin-top-0 colorOverlay"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        })`
       }}
     >
       <div
@@ -34,50 +36,38 @@ export const IndexPageTemplate = ({
           justifyContent: 'space-around',
           alignItems: 'left',
           flexDirection: 'column',
+          zIndex:1,
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
+        {/* START TITLE */}
+        <HeroTextPrime>
           {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
+        </HeroTextPrime>
+        <HeroTextSecond>
           {subheading}
-        </h3>
+        </HeroTextSecond>
+        {/* END TITLE */}
       </div>
-    </div>
+    </HeroBanner>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
+                {/* CTA Section */}
                 <div className="content">
+                  <Fade right>
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
+               </Fade>
                 </div>
+                {/* END CTA SECTION */}
+                {/* START FIRST SECTION */}
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -86,6 +76,8 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
+                {/* END FIRST SECTION */}
+                {/* 4 Features */}
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
@@ -94,9 +86,11 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
+                {/* END 4 Features */}
+                {/* START BLOG */}
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Reviews
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
@@ -105,6 +99,7 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
+                {/* END BLOG */}
               </div>
             </div>
           </div>
