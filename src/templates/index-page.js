@@ -11,6 +11,8 @@ import Fade from 'react-reveal/Fade'
 import {HeroBanner, HeroTextPrime, HeroTextSecond} from '../styled-components/home-sc'
 import Deck from '../shared/images/deck.jpeg'
 
+import ColorRoom from '../components/ColorRoom'
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -67,6 +69,7 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                </Fade>
+               <ColorRoom />
                 </div>
                 {/* END CTA SECTION */}
                 {/* START FIRST SECTION */}
