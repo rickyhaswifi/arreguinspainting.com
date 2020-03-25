@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: `Arreguin's Painting - Atlanta, GA`,
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      `Our reputation depends on our commitment to quality. That’s why we use only the finest materials available for prep and paint, and why we give your project the individualized care it deserves`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

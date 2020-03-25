@@ -8,6 +8,7 @@ import BlogRoll from '../components/BlogRoll'
 
 import Fade from 'react-reveal/Fade'
 
+import {Spacer} from '../styled-components/shared-sc'
 import {HeroBanner, HeroTextPrime, HeroTextSecond} from '../styled-components/home-sc'
 import Deck from '../shared/images/deck.jpeg'
 
@@ -69,7 +70,11 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                </Fade>
+               <Spacer />
+               <hr />
+               <Spacer />
                <ColorRoom />
+               <Spacer />
                 </div>
                 {/* END CTA SECTION */}
                 {/* START FIRST SECTION */}
@@ -83,28 +88,31 @@ export const IndexPageTemplate = ({
                 </div>
                 {/* END FIRST SECTION */}
                 {/* 4 Features */}
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
+               
+                {/* <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      See all products
+                      +
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 {/* END 4 Features */}
                 {/* START BLOG */}
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Reviews
+                    Services
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      +
+                    <Link className="btn" to="/services">
+                      All Services
                     </Link>
                   </div>
                 </div>
                 {/* END BLOG */}
+
+                <Features gridItems={intro.blurbs} />
+
               </div>
             </div>
           </div>

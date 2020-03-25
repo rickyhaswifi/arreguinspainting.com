@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{Component} from 'react'
 import { Link } from 'gatsby'
 
 import logo from '../img/logo.svg'
@@ -7,19 +7,31 @@ import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
 
-const Footer = class extends React.Component {
+import {FooterWrap} from '../styled-components/shared-sc'
+
+class Footer extends Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <>
+    <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+    <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#fff" />
+    <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#273691" />
+    </svg>
+      <FooterWrap>
+      
+      <footer className="footer has-text-white-ter">
         <div className="content has-text-centered">
-          <img
+          <h1
+          style={{color:'white' }}
+          >Arreguin's Paint Contractor, Inc.</h1>
+          {/* <img
             src={logo}
             alt="Kaldi"
             style={{ width: '14em', height: '10em' }}
-          />
+          /> */}
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+        <div className="content has-text-centered has-text-white-ter">
+          <div className="container has-text-white-ter">
             <div className="columns">
               <div className="column is-4">
                 <section className="menu">
@@ -108,6 +120,8 @@ const Footer = class extends React.Component {
           </div>
         </div>
       </footer>
+      </FooterWrap>
+      </>
     )
   }
 }

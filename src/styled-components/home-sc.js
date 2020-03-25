@@ -19,6 +19,7 @@ background-attachment: fixed;
   height: 100%;
   position: absolute;
   width: 100%;
+  
   }
 `;
 
@@ -26,15 +27,34 @@ export const HeroTextPrime = styled.h1`
 color:white;
 font-size:7em;
 text-transform:uppercase;
-font-weight:bold;
+white-space: nowrap;
+font-weight:900;
 background: linear-gradient(180deg,rgba(148,20,51,0) 50%, rgba(148,20,51,0.5) 50%);
-/* , #FF1941 50% */
+
+@media (max-width: 769px) {
+font-size:3em;
+}
+
 `;
 
 export const HeroTextSecond = styled.h2`
+padding:.5em;
 color:white;
-font-size:3.5em;
+font-size:3.5em!important;
 text-transform:uppercase;
 font-weight:bold;
 font-style:italic;
+
+color:white;
+text-transform:uppercase;
+white-space: nowrap;
+font-size:2em;
+
+@media (max-width: 769px) {
+font-size:2em;
+}
+
+@media (min-width: 769px) {
+font-size:2em;
+}
 `;

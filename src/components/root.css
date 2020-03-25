@@ -1,0 +1,9 @@
+:root{
+  --DeepBlue:#273691;
+  --LogoGreen:#00A74D;
+}
+
+.swatches-picker{
+  padding-top: 1em;
+  margin: auto;
+}
