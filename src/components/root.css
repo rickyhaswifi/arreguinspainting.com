@@ -1,5 +1,6 @@
 :root{
   --DeepBlue:#273691;
+  --DeepBlueGrad:linear-gradient(45deg, #273691, #275691);
   --LogoGreen:#00A74D;
 }
 

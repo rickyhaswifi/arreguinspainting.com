@@ -18,6 +18,7 @@ margin:auto;
 `;
 
 export const FooterWrap = styled.section`
-background-color:var(--DeepBlue);
+position: relative;
+background:var(--DeepBlueGrad);
 margin-top:-10px;
 `;

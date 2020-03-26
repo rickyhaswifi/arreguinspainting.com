@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Stroke from '../shared/images/w-stroke-1.png'
 
 import Fade from 'react-reveal/Fade'
 
@@ -13,6 +14,8 @@ import {HeroBanner, HeroTextPrime, HeroTextSecond} from '../styled-components/ho
 import Deck from '../shared/images/deck.jpeg'
 
 import ColorRoom from '../components/ColorRoom'
+
+import {LeftBack, RightBack} from '../styled-components/colorBacks-sc';
 
 export const IndexPageTemplate = ({
   image,
@@ -28,8 +31,8 @@ export const IndexPageTemplate = ({
       className="full-width-image margin-top-0 colorOverlay"
       style={{
         backgroundImage:`url(${
-          // !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          Deck
+          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          // Deck
         })`
       }}
     >
@@ -53,31 +56,38 @@ export const IndexPageTemplate = ({
         </HeroTextSecond>
         {/* END TITLE */}
       </div>
+    <img src={Stroke} style={{position:'absolute',zIndex:'1', bottom:'0'}}/>
     </HeroBanner>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
+            {/* <div className="column is-12"> */}
+{/* 
+            <div>
+            <div>
+            <div>
+            <div> */}
+
             <div className="column is-10 is-offset-1">
               <div className="content">
                 {/* CTA Section */}
                 <div className="content">
-                  <Fade right>
+                  {/* <Fade right>
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
-               </Fade>
-               <Spacer />
-               <hr />
+               </Fade> */}
                <Spacer />
                <ColorRoom />
                <Spacer />
                 </div>
                 {/* END CTA SECTION */}
                 {/* START FIRST SECTION */}
+                <LeftBack style={{backgroundColor:'#F89101'}}>
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -86,6 +96,7 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
+                </LeftBack>
                 {/* END FIRST SECTION */}
                 {/* 4 Features */}
                
@@ -98,6 +109,7 @@ export const IndexPageTemplate = ({
                 </div> */}
                 {/* END 4 Features */}
                 {/* START BLOG */}
+                <RightBack style={{background:'var(--DeepBlueGrad)'}}>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Services
@@ -109,6 +121,18 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
+                </RightBack>
+
+                <LeftBack style={{backgroundColor:'#00AB33', zIndex:'2'}}>
+                <Fade right>
+                  <div className="tile">
+                    <h1 className="title">{mainpitch.title}</h1>
+                  </div>
+                  <div className="tile">
+                    <h3 className="subtitle">{mainpitch.description}</h3>
+                  </div>
+               </Fade>
+                </LeftBack>
                 {/* END BLOG */}
 
                 <Features gridItems={intro.blurbs} />
