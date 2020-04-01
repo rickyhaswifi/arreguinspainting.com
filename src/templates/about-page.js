@@ -38,17 +38,9 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
-      <ContentHero
-      // className="full-width-image margin-top-0"
-      // style={{
-      //   background:`url(${Deck})`
-      // }}
-      >
-
+      <ContentHero>
       </ContentHero>
-      {/* <HeroCover>
 
-      </HeroCover> */}
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

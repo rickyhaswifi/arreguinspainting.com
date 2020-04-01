@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/biglogo.png'
 import {NavWrap, LogoImage, LogoText, NavItem, NavCTA} from '../styled-components/nav-sc'
+import { FaBars } from "react-icons/fa";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -103,10 +104,9 @@ const Navbar = class extends React.Component {
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
+              style={{marginTop:'30px'}}
             >
-              <span />
-              <span />
-              <span /> 
+              <FaBars />
             </div>
           </div>
 

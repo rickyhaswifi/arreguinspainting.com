@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import {ContentHero} from '../styled-components/shared-sc'
 
 export const BlogPostTemplate = ({
   content,
@@ -17,6 +18,9 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
+    <>
+      <ContentHero>
+      </ContentHero>
     <section className="section">
       {helmet || ''}
       <div className="container content">
@@ -43,6 +47,7 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
+    </>
   )
 }
 

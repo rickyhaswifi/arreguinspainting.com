@@ -3,12 +3,9 @@ templateKey: 'product-page'
 path: /services
 title: Arreguin's Paint Contractor, Inc. Services
 image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
+heading: 20+ Years painting Georiga
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  At Arreguin's Paint Contractor, Inc., we believe that everyone deserves a beautiful home. That's why we use quality materials like Sherwin Williams, PPG, and Benjamin Moore paints. Our painters have all passed our rigorous training to prove they have the experience and dedication that we demand. Arreguin's Paint Contractor, Inc. isn't satisfied with our work until you are.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -45,12 +42,10 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Great coffee with no compromises
+  heading: High-quality, Professional Painting Service
   description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+   We have the experience and skills to deliver exactly what you want—whether it’s a room or a whole building.
+   Our reputation depends on our commitment to quality. That’s why we use only the finest materials available for prep and paint, and why we give your project the individualized care it deserves.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg

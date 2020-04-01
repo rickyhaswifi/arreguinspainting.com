@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { SwatchesPicker } from 'react-color';
-import Room from '../shared/images/transparent-living.png';
-import { ColorRoomWrap, ColorRoomImageA } from "../styled-components/colorRoom-sc";
-import {TitleMain, CenterDis, Spacer} from '../styled-components/shared-sc';
+import Room from '../../shared/images/transparent-living.png';
+import { ColorRoomWrap, ColorRoomImageA } from "../../styled-components/colorRoom-sc";
+import {TitleMain, CenterDis, Spacer} from '../../styled-components/shared-sc';
 import Fade from 'react-reveal/Fade'
 
 class ColorRoom extends Component {

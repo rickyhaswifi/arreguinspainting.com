@@ -6,13 +6,12 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import Stroke from '../shared/images/w-stroke-1.png'
-import ColorRoom from '../components/ColorRoom'
-import Contact from '../pages/contact'
+import ColorRoom from '../components/homepage/ColorRoom'
+import Contact from '../pages/contact/form'
 
 // NPM Packages
 import Fade from 'react-reveal/Fade'
 import TextLoop from "react-text-loop";
-import { MdSmartphone } from 'react-icons/fa';
 
 // Styled Components
 import {TitleMain, Spacer, TitleMainWht, TitleSub, SubText} from '../styled-components/shared-sc'
@@ -137,11 +136,18 @@ export const IndexPageTemplate = ({
     </Fade>
 
       <BlogRoll />
+      <Fade up>
       <div className="column is-12 has-text-centered">
-        <Link className="btn" to="/services">
-          All Services
+
+        <Link to="/services">
+        <HomeCTA>
+        All Services
+        </HomeCTA>
         </Link>
+
+
       </div>
+      </Fade>
     </div>
     {/* </div> */}
     </RightBack>
@@ -205,14 +211,17 @@ export const IndexPageTemplate = ({
       <TitleSub>
       Arreguin's Paint Contractor Inc.
       </TitleSub>
-      <MdSmartphone/>
       <p>  
-1318 Atlanta RD SE<br/>
-Marietta, GA 30060<br/>
-<hr />
-Jose Arreguin - (770) 378-6726<br/>
-Juan Espinoza - (770) 437-0736
+      1318 Atlanta RD SE<br/>
+      Marietta, GA 30060<br/>
+      <hr />
+      Jose Arreguin - (770) 378-6726<br/>
+      Juan Espinoza - (770) 437-0736
       </p>
+      <hr />
+
+      <TitleMainWht>We service<br/> all Georgia</TitleMainWht>
+
       </Fade>
       </div>
       </div>
@@ -289,7 +298,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 340, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

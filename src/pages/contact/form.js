@@ -1,7 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import {ContentHero} from '../../styled-components/shared-sc'
 
 function encode(data) {
   return Object.keys(data)
@@ -36,16 +35,11 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
-        <ContentHero>
-      </ContentHero>
-        <section className="section">
-          <div className="container">
+      // <Layout>
+      //   <section className="section">
+      //     <div className="container">
             <div className="content">
-
-            <div className="columns">
-        <div className="column is-6">
-              <h1>Contact us</h1>
+              {/* <h1>Contact us</h1> */}
               <form
                 name="contact"
                 method="post"
@@ -158,28 +152,10 @@ export default class Index extends React.Component {
                   </button>
                 </div>
               </form>
-        </div>
-        <div className="column is-6">
-        <h1>
-      Arreguin's Paint Contractor Inc.
-      </h1>
-      <p>  
-      1318 Atlanta RD SE<br/>
-      Marietta, GA 30060<br/>
-      <hr />
-      Jose Arreguin - (770) 378-6726<br/>
-      Juan Espinoza - (770) 437-0736
-      </p>
-      <hr />
-
-      <h1>We service all Georgia</h1>
-        </div>
-        </div>
-
             </div>
-          </div>
-        </section>
-      </Layout>
+      //     </div>
+      //   </section>
+      // </Layout>
     )
   }
 }
