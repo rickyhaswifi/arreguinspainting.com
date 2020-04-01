@@ -19,3 +19,15 @@ html {
     height: 675px !important;
   }
 }
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+header{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.footer{
+position: relative;
+background:var(--DeepBlueGrad)!important;
+margin-top:-10px;
+}

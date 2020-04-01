@@ -79,7 +79,6 @@ width: 100%;
 height:400px;
 position: relative;
 &::before{
-  /* z-index: -1; */
   background-color: rgba(1,170,226,0.5)!important;
   content: '';
   display: block;
