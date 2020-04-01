@@ -6,11 +6,12 @@ import './all.sass'
 import './root.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import {GlobalCrunchWrapSupreme} from '../styled-components/globalStyles'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <GlobalCrunchWrapSupreme>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -52,7 +53,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div>{children}</div>
       <Footer />
-    </div>
+    </GlobalCrunchWrapSupreme>
   )
 }
 

@@ -1,10 +1,21 @@
 :root{
   --DeepBlue:#273691;
   --DeepBlueGrad:linear-gradient(45deg, #273691, #275691);
+  --RedCTA:linear-gradient(45deg, #F74A84,#FFA651);
   --LogoGreen:#00A74D;
+  --GoldCoast:#FA9600;
 }
+html {
+  scroll-behavior: smooth;
+ }
 
-.swatches-picker{
-  padding-top: 1em;
-  margin: auto;
+@media screen and (max-width: 1400px) {
+  .slider{
+    height: 750px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .slider{
+    height: 675px !important;
+  }
 }

@@ -6,16 +6,26 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import Stroke from '../shared/images/w-stroke-1.png'
-
-import Fade from 'react-reveal/Fade'
-
-import {Spacer} from '../styled-components/shared-sc'
-import {HeroBanner, HeroTextPrime, HeroTextSecond} from '../styled-components/home-sc'
-import Deck from '../shared/images/deck.jpeg'
-
 import ColorRoom from '../components/ColorRoom'
+import Contact from '../pages/contact'
 
+// NPM Packages
+import Fade from 'react-reveal/Fade'
+import TextLoop from "react-text-loop";
+import { MdSmartphone } from 'react-icons/fa';
+
+// Styled Components
+import {TitleMain, Spacer, TitleMainWht, TitleSub, SubText} from '../styled-components/shared-sc'
+import {HeroBanner, HeroTextPrime, HomeCTA,
+  HeroTextSecond, CircleImg} from '../styled-components/home-sc'
 import {LeftBack, RightBack} from '../styled-components/colorBacks-sc';
+
+// IMAGES
+import Deck from '../shared/images/deck.jpeg'
+import HomeFeature from '../shared/images/HomeFeatureCircle.jpg'
+import Princess from '../shared/images/princess.jpg'
+
+
 
 export const IndexPageTemplate = ({
   image,
@@ -26,9 +36,9 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
+  <>
     <HeroBanner
-      className="full-width-image margin-top-0 colorOverlay"
+      className="full-width-image margin-top-0"
       style={{
         backgroundImage:`url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -47,103 +57,173 @@ export const IndexPageTemplate = ({
           zIndex:1,
         }}
       >
-        {/* START TITLE */}
-        <HeroTextPrime>
-          {title}
-        </HeroTextPrime>
+        <Fade left>
         <HeroTextSecond>
           {subheading}
         </HeroTextSecond>
-        {/* END TITLE */}
+        </Fade>
+          {/* {title} */}
+          <Fade right>
+          <TextLoop interval={3000} springConfig={{ stiffness: 180, damping: 12 }}>
+           <HeroTextPrime>Painting Atlanta</HeroTextPrime>
+           <HeroTextPrime>Painting Homes</HeroTextPrime>
+           <HeroTextPrime>Painting Condos</HeroTextPrime>
+           <HeroTextPrime>Painting Business</HeroTextPrime>
+          </TextLoop>
+          </Fade>
+          <Fade up>
+<a href='#color'>
+        <HomeCTA>Learn More</HomeCTA>
+</a>
+          </Fade>
       </div>
+
     <img src={Stroke} style={{position:'absolute',zIndex:'1', bottom:'0'}}/>
     </HeroBanner>
+
     <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            {/* <div className="column is-12"> */}
-{/* 
-            <div>
-            <div>
-            <div>
-            <div> */}
+  <div className="columns">
+  <div className="column is-10 is-offset-1">
+    {/* <Spacer />
+    <Spacer />
+    <h1>
+    {mainpitch.title}
+    </h1> */}
+    <Spacer id='color'/>
+    <Spacer />
+    <Spacer />
+    <ColorRoom />
+    <Spacer />
+    <Spacer />
+    <Spacer />
+  {/* START FIRST SECTION */}
+  <Fade up>
+    <LeftBack style={{backgroundColor:'#01AAE2'}}>
+      <Fade up>
+    <TitleMainWht>
+    {heading}
+    </TitleMainWht>
+      </Fade>
+      <div className="columns">
 
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                {/* CTA Section */}
-                <div className="content">
-                  {/* <Fade right>
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-               </Fade> */}
-               <Spacer />
-               <ColorRoom />
-               <Spacer />
-                </div>
-                {/* END CTA SECTION */}
-                {/* START FIRST SECTION */}
-                <LeftBack style={{backgroundColor:'#F89101'}}>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                </LeftBack>
-                {/* END FIRST SECTION */}
-                {/* 4 Features */}
-               
-                {/* <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      +
-                    </Link>
-                  </div>
-                </div> */}
-                {/* END 4 Features */}
-                {/* START BLOG */}
-                <RightBack style={{background:'var(--DeepBlueGrad)'}}>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Services
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/services">
-                      All Services
-                    </Link>
-                  </div>
-                </div>
-                </RightBack>
-
-                <LeftBack style={{backgroundColor:'#00AB33', zIndex:'2'}}>
-                <Fade right>
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-               </Fade>
-                </LeftBack>
-                {/* END BLOG */}
-
-                <Features gridItems={intro.blurbs} />
-
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="column is-6">
+      <Fade up>
+      <CircleImg style={{backgroundImage:`url(${Princess})`}}></CircleImg>
+      </Fade>
       </div>
-    </section>
-  </div>
+  
+        <div className="column is-6">
+        <Fade up>
+        <TitleSub>20+ Years in our community</TitleSub>
+        <SubText>{description}</SubText>
+        </Fade>
+        </div>
+
+      </div>
+      <Spacer />
+    </LeftBack>
+  </Fade>
+  {/* END FIRST SECTION */}
+
+  {/* START BLOG */}
+  <Fade up>
+    <RightBack style={{background:'var(--DeepBlueGrad)'}}>
+    {/* <div className="columns"> */}
+    <div className="column is-12">
+    <Fade up>
+    <TitleMainWht>
+    Services
+    </TitleMainWht>
+    </Fade>
+
+      <BlogRoll />
+      <div className="column is-12 has-text-centered">
+        <Link className="btn" to="/services">
+          All Services
+        </Link>
+      </div>
+    </div>
+    {/* </div> */}
+    </RightBack>
+  </Fade>
+
+  <Fade up>
+    <LeftBack style={{backgroundColor:'#00AB33', zIndex:'2'}}>
+      <Fade up>
+        <TitleMainWht>
+        Painting with high quality standards
+        </TitleMainWht>
+      <div className="columns">
+      <div className="column is-6">
+      <Fade up>
+      <TitleSub>What can we paint for you?</TitleSub>
+      </Fade>
+      <Fade up>
+      <SubText>{mainpitch.description}</SubText>
+      </Fade>
+      </div>
+      <div className="column is-6">
+      <Fade up>
+        <CircleImg style={{backgroundImage:`url(${HomeFeature})`}}></CircleImg>
+      </Fade>
+      </div>
+      </div>
+      </Fade>
+      <Spacer />
+    </LeftBack>
+  </Fade>
+  {/* END BLOG */}
+  <Fade up>
+    <RightBack style={{background:'#CF5055'}}>
+    <Fade up>
+    <TitleMainWht>
+    Community Reviews
+    </TitleMainWht>
+    </Fade>
+  <Features gridItems={intro.blurbs} />
+      </RightBack>
+      </Fade>
+
+{/* CONTACT */}
+<Fade left>
+    <LeftBack style={{backgroundColor:'var(--GoldCoast)', zIndex:'2'}}>
+      <Fade up>
+        <TitleMainWht>
+        Free Estimate
+        </TitleMainWht>
+      <div className="columns">
+      <div className="column is-6">
+      <Fade up>
+      <TitleSub>Contact Us</TitleSub>
+      </Fade>
+      <Fade up>
+      <Contact />
+      </Fade>
+      </div>
+      <div className="column is-6">
+      <Fade up>
+      <TitleSub>
+      Arreguin's Paint Contractor Inc.
+      </TitleSub>
+      <MdSmartphone/>
+      <p>  
+1318 Atlanta RD SE<br/>
+Marietta, GA 30060<br/>
+<hr />
+Jose Arreguin - (770) 378-6726<br/>
+Juan Espinoza - (770) 437-0736
+      </p>
+      </Fade>
+      </div>
+      </div>
+      </Fade>
+    </LeftBack>
+  </Fade>
+
+    </div>
+    </div>
+</section>
+</>
 )
 
 IndexPageTemplate.propTypes = {
@@ -154,7 +234,7 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  blurbs: PropTypes.array,
   }),
 }
 

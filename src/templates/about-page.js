@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Deck from '../shared/images/deck.jpeg'
+import {ContentHero} from '../styled-components/shared-sc'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -36,6 +38,17 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
+      <ContentHero
+      // className="full-width-image margin-top-0"
+      // style={{
+      //   background:`url(${Deck})`
+      // }}
+      >
+
+      </ContentHero>
+      {/* <HeroCover>
+
+      </HeroCover> */}
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

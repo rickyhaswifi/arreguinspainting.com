@@ -1,24 +1,28 @@
 import styled from 'styled-components'
 
 export const LeftBack = styled.section`
-min-height:75vh;
-/* position: relative;
-left:0; */
-width:100%;
-border-radius: 0 20px;
-padding: 1em;
-margin-left:-25px;
 color:white!important;
+margin-top:-40px;
+min-height:75vh;
+width:100%;
+border-radius: 20px 20px;
+padding: 2em 2em 3em 3em;
+
+@media (min-width: 1000px) {
+margin-left:-25px!important;
+}
 `;
 
 export const RightBack = styled.section`
 color:white !important;
 margin-top:-40px;
 min-height:75vh;
-/* position: relative;
-right:0; */
 width:100%;
-border-radius: 20px 0px;
-padding: 1em;
-margin-left:25px;
+border-radius: 20px 20px;
+padding: 2em 3em 3em 2em;
+
+@media (min-width: 1000px) {
+margin-left:25px!important;
+}
+
 `;

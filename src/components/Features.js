@@ -3,20 +3,18 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css'
-import {ReviewCard} from '../styled-components/reviews-sc'
-import {Spacer} from '../styled-components/shared-sc'
+import {ReviewCard, ReviewSlider} from '../styled-components/reviews-sc'
+import {Spacer, TitleMainWht} from '../styled-components/shared-sc'
+import Fade from 'react-reveal/Fade'
+// import Slider from "react-slick";
+
+// const gridItems = {gridItems}
 
 // class FeatureGrid extends Component {
-//   render({ gridItems }) {
-//     const settings = {
-//       dots: true,
-//       infinite: true,
-//       speed: 500,
-//       slidesToShow: 1,
-//       slidesToScroll: 1
-//     };
+//   render() {
 //     return (
 // <>
+
 //   <div className="columns is-multiline">
 //     {gridItems.map(item => (
 //       <div key={item.text} className="column is-6">
@@ -42,27 +40,34 @@ import {Spacer} from '../styled-components/shared-sc'
 //   }
 // }
 
-
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns">
-    <Slider>
-    {gridItems.map(item => (
-      <div key={item.text} className="column is-12">
-       <Spacer/>
-       <Spacer/>
-       <Spacer/>
-        <ReviewCard>
-        {/* <img src={item} /> */}
-        <p>{item.text}</p>
-        {/* <PreviewCompatibleImage imageInfo={item} /> */}
-        </ReviewCard>
-   
 
-
-      </div>
-    ))}
-    </Slider>
-  </div>
+  <div className="columns is-multiline">
+     {/* <Slider> */}
+     {gridItems.map(item => (
+        <div key={item.text} className="column is-6">
+          <section style={{margin:'10px'}}>
+            <div className="has-text-centered">
+              <div
+                style={{
+                  width: '240px',
+                  display: 'inline-block',
+                }}
+              >
+                <Fade>
+                <PreviewCompatibleImage imageInfo={item} />
+                </Fade>
+              </div>
+            </div>
+           <Fade>
+            <ReviewCard>{item.text}</ReviewCard>
+           </Fade>
+          
+          </section>
+        </div>
+      ))}
+      {/* </Slider> */}
+    </div>
 )
 
 FeatureGrid.propTypes = {

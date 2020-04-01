@@ -25,26 +25,33 @@ background-attachment: fixed;
 
 export const HeroTextPrime = styled.h1`
 color:white;
-font-size:7em;
+font-size:8em;
+text-align:left;
 text-transform:uppercase;
 white-space: nowrap;
 font-weight:900;
 background: linear-gradient(180deg,rgba(148,20,51,0) 50%, rgba(148,20,51,0.5) 50%);
+text-align:center;
 
-@media (max-width: 769px) {
+@media (max-width: 1400px) {
+font-size:5em;
+}
+@media (max-width: 1000px) {
+font-size:4em;
+}
+@media (max-width: 700px) {
 font-size:3em;
 }
 
 `;
 
 export const HeroTextSecond = styled.h2`
-padding:.5em;
+padding:0em 0em 0em .2em;
 color:white;
-font-size:3.5em!important;
+font-size:3em!important;
 text-transform:uppercase;
-font-weight:bold;
 font-style:italic;
-
+text-align:left;
 color:white;
 text-transform:uppercase;
 white-space: nowrap;
@@ -57,4 +64,35 @@ font-size:2em;
 @media (min-width: 769px) {
 font-size:2em;
 }
+`;
+
+
+export const CircleImg = styled.section`
+background-repeat: no-repeat;
+background-size: cover;
+width:100%;
+height:500px;
+border-radius: 10px 0;
+margin:auto;
+display:block;
+`;
+
+export const HomeCTA = styled.button`
+/* height:2em !important; */
+width:50%;
+border: none;
+font-size:30px;
+text-transform:uppercase;
+letter-spacing:2px;
+padding:10px;
+text-align:center;
+margin: 1em 0em;
+color:white;
+background: var(--RedCTA);
+border-radius:20px;
+
+@media (max-width: 1000px) {
+  width:100%;
+}
+
 `;

@@ -1,7 +1,7 @@
 ---
 templateKey: 'product-page'
 path: /services
-title: Our Coffee
+title: Arreguin's Paint Contractor, Inc. Services
 image: /img/jumbotron.jpg
 heading: Great coffee with a conscience
 description: >-

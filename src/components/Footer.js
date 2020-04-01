@@ -1,5 +1,7 @@
 import React,{Component} from 'react'
 import { Link } from 'gatsby'
+import Fade from 'react-reveal/Fade'
+import { MdSmartphone } from 'react-icons/fa';
 
 import logo from '../img/logo.svg'
 import facebook from '../img/social/facebook.svg'
@@ -7,13 +9,15 @@ import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
 
-import {FooterWrap} from '../styled-components/shared-sc'
+import {FooterWrap, Spacer} from '../styled-components/shared-sc'
 import BlueStroke from '../shared/images/b-stroke-1.png'
 
 class Footer extends Component {
   render() {
     return (
       <>
+      <Fade up>
+
       <FooterWrap>
     {/* <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
     <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#fff" />
@@ -50,26 +54,7 @@ class Footer extends Component {
                         About
                       </Link>
                     </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
+             
                   </ul>
                 </section>
               </div>
@@ -124,7 +109,9 @@ class Footer extends Component {
           </div>
         </div>
       </footer>
+      <Spacer />
       </FooterWrap>
+      </Fade>
       </>
     )
   }
