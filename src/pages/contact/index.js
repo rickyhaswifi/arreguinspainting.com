@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import {ContentHero} from '../../styled-components/shared-sc'
+import {ContentHero} from '../../styled-components/contentPages-sc'
 
 function encode(data) {
   return Object.keys(data)
