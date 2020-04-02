@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 
-export const NavWrap = styled.section`
-`;
-
 export const LogoImage = styled.img`
 max-height:65px !important;
 padding-right:5px;

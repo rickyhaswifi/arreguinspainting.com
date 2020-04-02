@@ -16,20 +16,16 @@ p{
   word-spacing:-2px;
   text-align-last:left;
 }
-
 .swatches-picker{
   padding-top: 1em;
   margin: auto !important;
 }
 @media only screen and (max-width: 700px) {
-  .swatches-picker{
-  width:280px!important;
-  margin: auto !important;
+    .swatches-picker{
+    width:280px!important;
+    margin: auto !important;
+  }
 }
-}
-
-
-
 
 header{
   font-family: 'Poppins', sans-serif !important;
@@ -37,7 +33,8 @@ header{
 
 .italic{
   font-style: italic;
-  background-image: linear-gradient(to top, rgba(256,256,31,0.2) 50%, rgba(255,0,0,0) 50%);
+  background-image: linear-gradient(to top, 
+  rgba(256,256,31,0.2) 50%, rgba(255,0,0,0) 50%);
   width: auto;
   display: inline;
 }

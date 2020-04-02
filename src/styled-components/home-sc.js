@@ -1,25 +1,18 @@
 import styled from 'styled-components';
 
 export const HeroBanner = styled.section`
-/* background-position: top left;
-background-attachment: fixed;
-height:100vh; */
 width: 100%;
 height: calc(100vh - 40px);
 position: relative;
-/* background-attachment: fixed !important; */
 background-position: top left;
 background-attachment: fixed;
-/* opacity: 0.5; */
 &::before{
-  /* z-index: -1; */
   background-color: rgba(1,170,226,0.5)!important;
   content: '';
   display: block;
   height: 100%;
   position: absolute;
   width: 100%;
-  
   }
 `;
 
@@ -32,7 +25,6 @@ white-space: nowrap;
 font-weight:900;
 background: linear-gradient(180deg,rgba(148,20,51,0) 50%, rgba(148,20,51,0.5) 50%);
 text-align:center;
-
 @media (max-width: 1400px) {
 font-size:5em;
 }
@@ -48,7 +40,6 @@ font-size:2em;
 @media (max-width: 550px) {
 font-size:1.8em;
 }
-
 `;
 
 export const HeroTextSecond = styled.h2`
@@ -61,14 +52,12 @@ color:white;
 text-transform:uppercase;
 white-space: nowrap;
 font-size:3em;
-
 @media (max-width: 1400px) {
   font-size:2.5em;
 }
 @media (max-width: 700px) {
 font-size:2em;
 }
-
 @media (max-width: 600px) {
 font-size:1.5em;
 }
@@ -86,7 +75,6 @@ display:block;
 `;
 
 export const HomeCTA = styled.button`
-/* height:2em !important; */
 width:50%;
 border: none;
 font-size:30px;
@@ -96,17 +84,14 @@ padding:10px;
 text-align:center;
 margin: 1em 0em;
 color:white;
-background: var(--RedCTA);
+background: var(--GoldCoast);
 border-radius:20px;
-
 @media (max-width: 1000px) {
   font-size:25px;
   width:100%;
 }
-
 @media (max-width: 700px) {
   width:80%;
   margin:auto;
 }
-
 `;
