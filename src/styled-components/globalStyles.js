@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const GlobalCrunchWrapSupreme = styled.section`
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 p{
   font-family: 'Poppins', sans-serif !important;

@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import Deck from '../shared/images/deck.jpeg'
 
 export const ContentHero = styled.section`
-background: url(${Deck}) no-repeat center center fixed;
+background: url(${Deck});
+background-repeat: no-repeat;
+background-attachment: fixed;
 background-size: cover;
 width: 100%;
 height: 400px;
