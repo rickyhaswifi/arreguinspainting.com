@@ -12,13 +12,13 @@ import Contact from '../pages/contact/form'
 
 // NPM Packages
 import Fade from 'react-reveal/Fade'
-import TextLoop from "react-text-loop";
+import TextLoop from "react-text-loop"
 
 // Styled Components
 import {TitleMain, Spacer, TitleMainWht, TitleSub, SubText} from '../styled-components/shared-sc'
 import {HeroBanner, HeroTextPrime, HomeCTA,
   HeroTextSecond, CircleImg} from '../styled-components/home-sc'
-import {LeftBack, RightBack} from '../styled-components/colorBacks-sc';
+import {LeftBack, RightBack} from '../styled-components/colorBacks-sc'
 
 // IMAGES
 import Deck from '../shared/images/deck.jpeg'
