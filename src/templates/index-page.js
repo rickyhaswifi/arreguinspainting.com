@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import ContactScript from '../components/hooks/ContactScript'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -71,9 +72,9 @@ export const IndexPageTemplate = ({
           </TextLoop>
           </Fade>
           <Fade up>
-<a href='#color'>
-        <HomeCTA>Learn More</HomeCTA>
-</a>
+          <a href='#color'>
+          <HomeCTA>Learn More</HomeCTA>
+          </a>
           </Fade>
       </div>
 
@@ -214,14 +215,13 @@ export const IndexPageTemplate = ({
       <p>  
       1318 Atlanta RD SE<br/>
       Marietta, GA 30060<br/>
-      <hr />
+      </p>
+      <p>
       Jose Arreguin - (770) 378-6726<br/>
       Juan Espinoza - (770) 437-0736
       </p>
       <hr />
-
       <TitleMainWht>We service<br/> all Georgia</TitleMainWht>
-
       </Fade>
       </div>
       </div>
@@ -231,6 +231,7 @@ export const IndexPageTemplate = ({
 
     </div>
     </div>
+    <ContactScript />
 </section>
 </>
 )

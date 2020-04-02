@@ -40,7 +40,13 @@ font-size:5em;
 font-size:4em;
 }
 @media (max-width: 700px) {
-font-size:3em;
+font-size:2.7em;
+}
+@media (max-width: 600px) {
+font-size:2em;
+}
+@media (max-width: 550px) {
+font-size:1.8em;
 }
 
 `;
@@ -48,21 +54,23 @@ font-size:3em;
 export const HeroTextSecond = styled.h2`
 padding:0em 0em 0em .2em;
 color:white;
-font-size:3em!important;
 text-transform:uppercase;
 font-style:italic;
 text-align:left;
 color:white;
 text-transform:uppercase;
 white-space: nowrap;
-font-size:2em;
+font-size:3em;
 
-@media (max-width: 769px) {
+@media (max-width: 1400px) {
+  font-size:2.5em;
+}
+@media (max-width: 700px) {
 font-size:2em;
 }
 
-@media (min-width: 769px) {
-font-size:2em;
+@media (max-width: 600px) {
+font-size:1.5em;
 }
 `;
 
@@ -92,7 +100,13 @@ background: var(--RedCTA);
 border-radius:20px;
 
 @media (max-width: 1000px) {
+  font-size:25px;
   width:100%;
+}
+
+@media (max-width: 700px) {
+  width:80%;
+  margin:auto;
 }
 
 `;

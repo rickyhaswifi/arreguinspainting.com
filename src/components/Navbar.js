@@ -84,7 +84,6 @@ const Navbar = class extends React.Component {
       //   </div>
       // </nav>
 
-      <NavWrap>
       <nav
         className="navbar is-transparent"
         role="navigation"
@@ -119,24 +118,26 @@ const Navbar = class extends React.Component {
             </div> */}
 
             <div className="navbar-end has-text-centered">
-            <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" to="/about">
               <NavItem>
-                About
+              About
               </NavItem>
               </Link>
+
               <Link className="navbar-item" to="/services">
                 <NavItem>
                 Services
                 </NavItem>
               </Link>
+
               <Link className="navbar-item" to='/'>
                 <NavCTA>Free Estimate</NavCTA>
               </Link>
+              
             </div>
           </div>
         </div>
       </nav>
-    </NavWrap>
     )
   }
 }

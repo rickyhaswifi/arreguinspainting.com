@@ -166,7 +166,9 @@ export default class Index extends React.Component {
       <p>  
       1318 Atlanta RD SE<br/>
       Marietta, GA 30060<br/>
-      <hr />
+      </p>
+      <hr/>
+      <p>
       Jose Arreguin - (770) 378-6726<br/>
       Juan Espinoza - (770) 437-0736
       </p>

@@ -19,8 +19,16 @@ p{
 
 .swatches-picker{
   padding-top: 1em;
-  margin: auto;
+  margin: auto !important;
 }
+@media only screen and (max-width: 700px) {
+  .swatches-picker{
+  width:280px!important;
+  margin: auto !important;
+}
+}
+
+
 
 
 header{

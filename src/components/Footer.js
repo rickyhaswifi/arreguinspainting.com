@@ -81,16 +81,9 @@ class Footer extends Component {
                 <a title="google" target='_blank' href="https//bit.ly/ArreguinsGoogleMap">
                   <FaGoogle />
                 </a>
-                <a title="facebook" target='_blank' href="https://facebook.com">
+                <a title="facebook" target='_blank' href="https://www.facebook.com/ArreguinsPainting/">
                  <FaFacebook />
                 </a>
-                {/* <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a> */}
               </div>
             </div>
           </div>

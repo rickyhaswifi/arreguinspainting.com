@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
 export const NavWrap = styled.section`
-/* height:60px;
-margin:auto;
-padding-top:10px; */
 `;
 
 export const LogoImage = styled.img`
@@ -13,21 +10,27 @@ padding-right:5px;
 
 export const LogoText = styled.h3`
 font-weight:600;
+font-size:1.5em;
+@media (max-width: 1000px) {
+  font-size:1em;
+}
+@media (max-width: 700px) {
+  font-size:0.8em;
+}
 `;
 
-export const NavItem = styled.a`
+export const NavItem = styled.span`
 color:var(--LogoGreen);
-font-weight:400 !important;
+font-weight:500 !important;
 text-transform:uppercase;
 letter-spacing:1px !important;
 `;
 
-export const NavCTA = styled.a`
-font-weight:400 !important;
+export const NavCTA = styled.span`
+font-weight:500 !important;
 letter-spacing:1px !important;
 color:white;
 text-transform:uppercase;
-/* border:var(--DeepBlue) 2px solid; */
 background-color:var(--LogoGreen);
 padding:6px 8px;
 border-radius:5px;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Deck from '../shared/images/deck.jpeg'
 
-
 export const TitleMain = styled.h1`
 text-transform:uppercase;
 font-weight:900!important;
@@ -34,12 +33,12 @@ outline-color:white;
 
 &:after{
   content: ""; 
-    display: block;
-    margin: 0 auto;
-    width: 25%;
-    padding-top: 2px;
-    border-bottom: 1px solid var(--GoldCoast);
-    margin-bottom:20px;
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  padding-top: 2px;
+  border-bottom: 1px solid var(--GoldCoast);
+  margin-bottom:20px;
 }
 
 `;
@@ -70,13 +69,15 @@ export const FooterWrap = styled.section`
 position: relative;
 background:var(--DeepBlueGrad);
 margin-top:-10px;
+width:100%;
+overflow-x:hidden;
 `;
 
 export const ContentHero = styled.section`
 background: url(${Deck}) no-repeat center center fixed;
 background-size: cover;
 width: 100%;
-height:400px;
+height: 400px;
 position: relative;
 &::before{
   background-color: rgba(1,170,226,0.5)!important;
@@ -85,6 +86,5 @@ position: relative;
   height: 100%;
   position: absolute;
   width: 100%;
-  
   }
 `;
