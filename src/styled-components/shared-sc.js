@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import Deck from '../shared/images/deck.jpeg'
 
 export const TitleMain = styled.h1`
-font-family: 'Poppins', sans-serif !important;
 text-transform:uppercase;
 font-weight:900!important;
 font-size:2.7em;
@@ -17,7 +15,6 @@ text-align:center;
 `;
 
 export const TitleMainWht = styled.h2`
-font-family: 'Poppins', sans-serif !important;
 color:white;
 text-align:center;
 text-transform:uppercase;
@@ -43,7 +40,6 @@ outline-color:white;
 `;
 
 export const TitleSub = styled.h1`
-font-family: 'Poppins', sans-serif !important;
 text-transform:capitalize;
 font-weight:700!important;
 font-size:2.3em;
@@ -72,20 +68,4 @@ background:var(--DeepBlueGrad);
 margin-top:-10px;
 width:100%;
 overflow-x:hidden;
-`;
-
-export const ContentHero = styled.section`
-background: url(${Deck}) no-repeat center center fixed;
-background-size: cover;
-width: 100%;
-height: 400px;
-position: relative;
-&::before{
-  background-color: rgba(1,170,226,0.5)!important;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  }
 `;

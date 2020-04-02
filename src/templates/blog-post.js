@@ -5,7 +5,8 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import {ContentHero, TitleMainWht} from '../styled-components/shared-sc'
+import {TitleMainWht} from '../styled-components/shared-sc'
+import {ContentHero} from '../styled-components/contentPages-sc'
 
 export const BlogPostTemplate = ({
   content,
