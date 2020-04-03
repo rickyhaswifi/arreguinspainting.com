@@ -84,6 +84,8 @@ const Navbar = class extends React.Component {
       //   </div>
       // </nav>
 
+      
+
       <nav
         className="navbar is-transparent"
         role="navigation"
@@ -103,9 +105,11 @@ const Navbar = class extends React.Component {
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
-              style={{marginTop:'30px'}}
+              style={{float:'right', marginTop:'-25px', padding:'55px'}}
             >
-              <FaBars />
+              <FaBars 
+              style={{color:'var(--LogoGreen)',fontSize:'25px'}}
+              />
             </div>
           </div>
 
@@ -130,10 +134,10 @@ const Navbar = class extends React.Component {
                 </NavItem>
               </Link>
 
-              <Link className="navbar-item" to='/'>
+              <Link className="navbar-item" to='/contact'>
                 <NavCTA>Free Estimate</NavCTA>
               </Link>
-              
+
             </div>
           </div>
         </div>

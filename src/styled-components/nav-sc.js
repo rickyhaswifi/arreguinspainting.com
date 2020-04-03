@@ -12,8 +12,16 @@ font-size:1.5em;
   font-size:1em;
 }
 @media (max-width: 700px) {
-  font-size:0.8em;
+  font-size:12px;
 }
+
+/* transform: .3s all;
+&:hover{
+  background: -webkit-linear-gradient(45deg, #1050A6, #05DCD2,#20B24D,#3D9C4F,#FABF31,#F9393B,#BD1A71,#2D0071) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+} */
+
 `;
 
 export const NavItem = styled.span`
@@ -29,6 +37,6 @@ letter-spacing:1px !important;
 color:white;
 text-transform:uppercase;
 background-color:var(--LogoGreen);
-padding:6px 8px;
+padding:8px 12px;
 border-radius:5px;
 `; 
