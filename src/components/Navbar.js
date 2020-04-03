@@ -84,7 +84,7 @@ const Navbar = class extends React.Component {
       //   </div>
       // </nav>
 
-      
+
 
       <nav
         className="navbar is-transparent"
@@ -94,7 +94,7 @@ const Navbar = class extends React.Component {
 
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            <Link to="/" className="navbar-item gradient-text" title="Logo">
               <LogoImage src={logo} alt="Arreguin's Painting" />  
               <LogoText>
               Arreguin's Paint Contractor, Inc.

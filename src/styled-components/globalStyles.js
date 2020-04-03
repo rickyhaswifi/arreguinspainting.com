@@ -2,15 +2,6 @@ import styled from 'styled-components'
 
 export const GlobalCrunchWrapSupreme = styled.section`
 
-.navbar-brand a{
-  transform: .3s all !important;
-&:hover{
-  background: -webkit-linear-gradient(45deg, #1050A6, #05DCD2,#20B24D,#3D9C4F,#FABF31,#F9393B,#BD1A71,#2D0071) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-}
-}
-
 .button.is-link{
   width:100%;
   background:var(--DeepBlue);

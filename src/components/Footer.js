@@ -57,7 +57,7 @@ class Footer extends Component {
                 <a title="yelp" target='_blank' href="https://www.yelp.com/biz/arreguins-paint-contractor-marietta">
                   <FaYelp/>
                 </a>
-                <a title="google" target='_blank' href="https//bit.ly/ArreguinsGoogleMap">
+                <a title="google" target='_blank' href="https://bit.ly/ArreguinsGoogleMap">
                   <FaGoogle />
                 </a>
                 <a title="facebook" target='_blank' href="https://www.facebook.com/ArreguinsPainting/">

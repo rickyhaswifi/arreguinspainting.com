@@ -12,15 +12,26 @@ font-size:1.5em;
   font-size:1em;
 }
 @media (max-width: 700px) {
-  font-size:12px;
+  font-size:14px;
 }
 
-/* transform: .3s all;
+background: linear-gradient(to right, #1050A6, #05DCD2,#20B24D,#3D9C4F,#FABF31,#F9393B,#BD1A71,#2D0071);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgba(0,0,0,1);
+  transition: color .2s ease-in-out;
+
 &:hover{
-  background: -webkit-linear-gradient(45deg, #1050A6, #05DCD2,#20B24D,#3D9C4F,#FABF31,#F9393B,#BD1A71,#2D0071) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-} */
+  color:rgba(0,0,0,0);
+}
+
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
 
 `;
 
