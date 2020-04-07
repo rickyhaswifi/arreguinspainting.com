@@ -218,7 +218,7 @@ export const IndexPageTemplate = ({
       </p>
       <p>
       Jose Arreguin - (770) 378-6726<br/>
-      Juan Espinoza - (770) 437-0736
+      Juan Espinoza - (404) 886-8373
       </p>
       <hr />
       <TitleMainWht>We service<br/> all Georgia</TitleMainWht>

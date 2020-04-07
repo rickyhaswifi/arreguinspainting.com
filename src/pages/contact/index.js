@@ -170,7 +170,7 @@ export default class Index extends React.Component {
       <hr/>
       <p>
       Jose Arreguin - (770) 378-6726<br/>
-      Juan Espinoza - (770) 437-0736
+      Juan Espinoza - (404) 886-8373
       </p>
       <hr />
 

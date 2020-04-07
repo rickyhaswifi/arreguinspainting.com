@@ -63,6 +63,14 @@ class Footer extends Component {
                 <a title="facebook" target='_blank' href="https://www.facebook.com/ArreguinsPainting/">
                  <FaFacebook />
                 </a>
+              <ul style={{listStyle:'none', textAlign:'center'}}>
+                <li>
+                Jose Arreguin - (770) 378-6726
+                </li>
+                <li>
+                Juan Espinoza - (404) 886-8373
+                </li>
+              </ul>
               </div>
             </div>
           </div>
