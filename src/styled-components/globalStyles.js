@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 export const GlobalCrunchWrapSupreme = styled.section`
 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
 .button.is-link{
   width:100%;
   background:var(--DeepBlue);
