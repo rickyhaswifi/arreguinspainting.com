@@ -1,10 +1,8 @@
-import React, {Component} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css'
-import {ReviewCard, ReviewSlider} from '../styled-components/reviews-sc'
-import {Spacer, TitleMainWht} from '../styled-components/shared-sc'
+import {ReviewCard} from '../styled-components/reviews-sc'
 import Fade from 'react-reveal/Fade'
 // import Slider from "react-slick";
 

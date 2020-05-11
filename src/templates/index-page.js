@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import ContactScript from '../components/hooks/ContactScript'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -15,13 +14,12 @@ import Fade from 'react-reveal/Fade'
 import TextLoop from "react-text-loop"
 
 // Styled Components
-import {TitleMain, Spacer, TitleMainWht, TitleSub, SubText} from '../styled-components/shared-sc'
+import { Spacer, TitleMainWht, TitleSub, SubText} from '../styled-components/shared-sc'
 import {HeroBanner, HeroTextPrime, HomeCTA,
   HeroTextSecond, CircleImg} from '../styled-components/home-sc'
 import {LeftBack, RightBack} from '../styled-components/colorBacks-sc'
 
 // IMAGES
-import Deck from '../shared/images/deck.jpeg'
 import HomeFeature from '../shared/images/HomeFeatureCircle.jpg'
 import Princess from '../shared/images/princess.jpg'
 
@@ -78,7 +76,7 @@ export const IndexPageTemplate = ({
           </Fade>
       </div>
 
-    <img src={Stroke} style={{position:'absolute',zIndex:'1', bottom:'0'}}/>
+    <img src={Stroke} alt='Interior Painting' style={{position:'absolute',zIndex:'1', bottom:'0'}}/>
     </HeroBanner>
 
     <section className="section section--gradient">
@@ -231,7 +229,6 @@ export const IndexPageTemplate = ({
 
     </div>
     </div>
-    <ContactScript />
 </section>
 </>
 )

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import Deck from '../shared/images/deck.jpeg'
 import {ContentHero} from '../styled-components/contentPages-sc'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {

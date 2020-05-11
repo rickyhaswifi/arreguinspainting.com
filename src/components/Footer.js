@@ -54,13 +54,13 @@ class Footer extends Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="yelp" target='_blank' href="https://www.yelp.com/biz/arreguins-paint-contractor-marietta">
+                <a title="yelp" target='_blank' rel="noopener noreferrer" href="https://www.yelp.com/biz/arreguins-paint-contractor-marietta">
                   <FaYelp/>
                 </a>
-                <a title="google" target='_blank' href="https://bit.ly/ArreguinsGoogleMap">
+                <a title="google" target='_blank' rel="noopener noreferrer" href="https://bit.ly/ArreguinsGoogleMap">
                   <FaGoogle />
                 </a>
-                <a title="facebook" target='_blank' href="https://www.facebook.com/ArreguinsPainting/">
+                <a title="facebook" target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/ArreguinsPainting/">
                  <FaFacebook />
                 </a>
               <ul style={{listStyle:'none', textAlign:'center'}}>

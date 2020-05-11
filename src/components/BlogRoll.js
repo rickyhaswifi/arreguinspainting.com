@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
-import {ServiceCard, ServiceCTA, ServiceTitle, ServiceCardMobile} from '../styled-components/serviceCard-sc'
-import {TitleMain, SubText, TitleSub} from '../styled-components/shared-sc'
+import {ServiceCard, ServiceCTA, ServiceTitle, } from '../styled-components/serviceCard-sc'
 import Fade from 'react-reveal/Fade'
 
 class BlogRoll extends React.Component {

@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/biglogo.png'
-import {NavWrap, LogoImage, LogoText, NavItem, NavCTA} from '../styled-components/nav-sc'
+import {LogoImage, LogoText, NavItem, NavCTA} from '../styled-components/nav-sc'
 import { FaBars } from "react-icons/fa";
 
 const Navbar = class extends React.Component {
@@ -94,7 +93,7 @@ const Navbar = class extends React.Component {
 
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item gradient-text" title="Logo">
+            <Link to="/" className="navbar-item gradient-text" title="Arreguin's Painting">
               <LogoImage src={logo} alt="Arreguin's Painting" />  
               <LogoText>
               Arreguin's Paint Contractor, Inc.
