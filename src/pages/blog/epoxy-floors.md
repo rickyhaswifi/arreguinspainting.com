@@ -8,4 +8,7 @@ featuredimage: /img/photo.png
 tags:
   - Services
 ---
+![Epoxy Garage](/img/photo.png)
+
+\
 Protect your garage floor with our durable, easy-to-clean and great looking epoxy flooring solution.
