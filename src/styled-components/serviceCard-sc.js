@@ -3,21 +3,22 @@ import styled from "styled-components";
 export const ServiceCard = styled.section`
 position: relative !important;
 display:block !important;
-margin: 1.5em .5em;
-width:250px;
+margin: 1.5em auto;
+width:225px;
 background:#f2f2f2;
 padding: 0.8em;
 color:#1c1c1c;
 border-radius:0 20px;
-height:500px;
+height:auto;
 @media (max-width: 1000px) {
 width:100%;
-height:500px;
+height:auto;
 }
-transition: .2s all;
+transition: 200ms all ease;
 &:hover{
+  cursor: pointer;
   background:#08AAE2;
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 5px 5px 5px #000;
   h2{
     color:white!important;
@@ -54,10 +55,10 @@ transition: .2s all;
 export const ServiceTitle = styled.h2`
 text-transform:capitalize;
 font-weight:700!important;
-font-size:2em;
+font-size:1.5em;
 color:var(--DeepBlue) !important;
 text-align:center;
-padding:.8em 0em 0em 0em!important;
+padding: .8em 0em 0em 0em!important;
 `;
 
 export const ServiceCTA = styled.button`
@@ -72,3 +73,9 @@ color:var(--DeepBlue);
 background:var(--GoldCoast);
 border-radius:10px;
 `;
+
+export const ServiceImage = styled.img`
+object-fit: cover;
+height: 300px;
+width: 100%;
+`

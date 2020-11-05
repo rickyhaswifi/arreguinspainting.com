@@ -86,6 +86,7 @@ margin: 1em 0em;
 color:white;
 background: var(--GoldCoast);
 border-radius:20px;
+transition: all 200ms ease;
 @media (max-width: 1000px) {
   font-size:25px;
   width:100%;
@@ -93,5 +94,10 @@ border-radius:20px;
 @media (max-width: 700px) {
   width:80%;
   margin:auto;
+}
+
+&:hover {
+  cursor: pointer;
+  background-color: #C97A03;
 }
 `;
